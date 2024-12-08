@@ -16,16 +16,19 @@ This project implements the classic Producer-Consumer problem in C++ using multi
    ```bash
    git clone https://github.com/sebas-ib/producer-consumer-system.git
    cd producer-consumer-system
+   ```
 
-2.Compile the program using the provided Makefile:
-  ```bash
-  make
+
+2. Compile the program using the provided Makefile:
+   ```bash
+   make
+   ```
 
 ## Usage
-
 Run the executable after compilation:
-  ``bash
-  ./producer_consumer
+   ```bash
+   ./food_delivery
+   ```
 
 ### Configuration
 Modify the source code to adjust parameters such as:
