@@ -64,7 +64,7 @@ On macOS, you may see the following warnings during compilation:
 These warnings occur because the macOS SDK marks `sem_init` as deprecated. These warnings can be ignored when running in a Linux environment.
 
 ### Recommended Environment for Running the Code
-To avoid these deprecation warnings and ensure the code runs as expected, I recommend running the program in a Linux-based environment. I used the second approach to get aroung this; however, if you aren't an SDSU student, the first approach is also an option:
+To avoid these deprecation warnings and ensure the code runs as expected, I recommend running the program in a Linux-based environment. I used the second approach to get around this; however, if you aren't an SDSU student, the first approach is also an option:
 
 1. **Virtual Machine (VM)**:
    Use a Linux-based virtual machine through tools like VMware or VirtualBox to create a development environment.
