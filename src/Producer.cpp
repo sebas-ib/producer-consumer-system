@@ -2,11 +2,11 @@
 #include <cstdlib>
 #include <pthread.h>
 #include <semaphore.h>
-#include "Broker.h"
+#include "../include/Broker.h"
 #include <iostream>
 #include <semaphore.h>
-#include "fooddelivery.h"
-#include "log.h"
+#include "../include/fooddelivery.h"
+#include "../include/log.h"
 
 void *producer1(void *arg) {
     // Create the broker

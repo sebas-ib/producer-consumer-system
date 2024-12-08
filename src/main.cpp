@@ -1,14 +1,14 @@
 #include <unistd.h>
-#include "Producer.h"
-#include "Consumer.h"
-#include "Broker.h"
+#include "../include/Producer.h"
+#include "../include/Consumer.h"
+#include "../include/Broker.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <pthread.h>
 #include <cerrno>
 #include <iostream>
 #include <semaphore.h>
-#include "log.h"
+#include "../include/log.h"
 
 
 

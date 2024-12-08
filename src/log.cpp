@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <time.h>
 
-#include "log.h"
+#include "../include/log.h"
 
 /*
  * i/o functions - assumed to be called in a critical section
