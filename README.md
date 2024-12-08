@@ -1,3 +1,4 @@
+
 # producer-consumer-system
 
 This project implements the classic Producer-Consumer problem in C++ using multithreading and synchronization mechanisms. It simulates the interaction between producers and consumers sharing a bounded buffer, showcasing concurrency handling in modern software development.
@@ -6,22 +7,6 @@ This project implements the classic Producer-Consumer problem in C++ using multi
 - **Multithreaded Implementation**: Simultaneously run multiple producers and consumers.
 - **Synchronization**: Ensures thread-safe access to the shared buffer using mutex locks and condition variables.
 - **Configurable**: Easily modify the number of producers, consumers, or buffer size.
-
-## Notes
-### Expected Deprecation Warnings on macOS
-On macOS, you may see the following warnings during compilation:
-   ```bash
-   warning: 'sem_init' is deprecated [-Wdeprecated-declarations]
-   ```
-These warnings are a result of the macOS SDK marking sem_init as deprecated. These warnings can be safely ignored when running in a Linux environment.
-
-### Recommended Environment for Running the Code
-To avoid these deprecation warnings and ensure the code runs as expected, it's recommended to run the program in a Linux-based environment. If you're working on macOS, consider using one of the following approaches:
-
-1. Virtual Machine (VM):
-   Use a Linux-based virtual machine through tools like VMware or VirtualBox to create a development environment.
-2. CLion's Remote Development Feature:
-   Connect to a remote Linux machine via SSH (SDSU Edoras account) and run the program in a Linux environment.
 
 ## Prerequisites
 - C++ compiler supporting C++11 or later
@@ -34,7 +19,6 @@ To avoid these deprecation warnings and ensure the code runs as expected, it's r
    cd producer-consumer-system
    ```
 
-
 2. Compile the program using the provided Makefile:
    ```bash
    make
@@ -45,6 +29,7 @@ Run the executable after compilation:
    ```bash
    ./fooddelivery
    ```
+
 ### Command-Line Options
 The program accepts the following optional arguments:
    - `-n`: Number of delivery requests (default: 100)
@@ -69,4 +54,21 @@ If no arguments are provided, the program runs with:
    # [-n Num of Delivery Requests] [-a Time for Service A to deliver (ms)] [-b Time for Service B to deliver (ms)] [-p Time for Pizza to be made (ms)] [-s Time for Sandwich to be made (ms)]
    ```
 
-   
+## Notes
+
+### Expected Deprecation Warnings on macOS
+On macOS, you may see the following warnings during compilation:
+   ```bash
+   warning: 'sem_init' is deprecated [-Wdeprecated-declarations]
+   ```
+These warnings occur because the macOS SDK marks `sem_init` as deprecated. These warnings can be safely ignored when running in a Linux environment.
+
+### Recommended Environment for Running the Code
+To avoid these deprecation warnings and ensure the code runs as expected, it's recommended to run the program in a Linux-based environment. If you're working on macOS, consider using one of the following approaches:
+
+1. **Virtual Machine (VM)**:
+   Use a Linux-based virtual machine through tools like VMware or VirtualBox to create a development environment.
+
+2. **CLion's Remote Development Feature**:
+   Connect to a remote Linux machine via SSH (e.g., your SDSU Edoras account) and run the program in a Linux environment.
+
