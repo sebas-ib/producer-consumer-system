@@ -27,10 +27,14 @@ This project implements the classic Producer-Consumer problem in C++ using multi
 ## Usage
 Run the executable after compilation:
    ```bash
-   ./food_delivery
+   ./fooddelivery
    ```
 
 ### Configuration
 Modify the source code to adjust parameters such as:
-  Number of producers or consumers
-  Buffer size
+- Number of producers or consumers
+- Buffer size
+   Arguments:
+   ```bash
+   [-n Num of Delivery Requests] [-a Time for Service A to deliver (ms)] [-b Time for Service B to deliver (ms)] [-p Time for Pizza to be made (ms)] [-s Time for Sandwich to be made (ms)]
+   ```
