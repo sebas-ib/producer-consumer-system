@@ -1,16 +1,12 @@
-# Ignore build files
 build/
 cmake-build-debug/
 
-# Editor files
 *.idea/
 *.vscode/
 
-# Compiled binaries
 *.o
 *.out
 *.exe
 
-# MacOS-specific files
 .DS_Store
 
